@@ -1,0 +1,122 @@
+.banner-page {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 12rem 0;
+    &-bg {
+        width: 100%;
+        height: calc(100vw * 600 / 1728);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: linear-gradient(180deg, rgba(230, 204, 108, 0) 15.52%, rgba(188, 144, 66, 0.8) 100%),
+                linear-gradient(180deg, #f8f5f0 9.39%, rgba(255, 255, 255, 0) 144.22%);
+            z-index: 1;
+        }
+    }
+
+    &-content {
+        position: relative;
+        z-index: 2;
+    }
+
+    .breadcrumbs {
+        margin-bottom: 9rem;
+    }
+
+    &-title {
+        font-family: "Latin Modern Roman";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 6rem;
+        line-height: 1.5;
+        color: $color-text;
+        text-align: center;
+        margin-bottom: 3.7rem;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(45deg);
+            background: linear-gradient(138.37deg, rgba(164, 110, 41, 0.15) 2.24%, rgba(247, 228, 127, 0.15) 104.59%);
+            z-index: -1;
+            width: 14rem;
+            height: 14rem;
+        }
+    }
+
+    &-filter {
+        background: rgba(248, 245, 240, 0.8);
+        border-radius: 8.9rem;
+        padding: 2.3rem 7.3rem;
+
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 89rem;
+    }
+
+    &-filter-title {
+        display: flex;
+        align-items: center;
+        column-gap: 1.2rem;
+        font-family: "Latin Modern Roman";
+        font-style: normal;
+        font-weight: 700;
+        @include fz-16;
+        line-height: 1.5;
+        color: $color-pri;
+        margin-bottom: 1rem;
+    }
+
+    &-filter-icon {
+        width: 1.6rem;
+        height: 1.6rem;
+        flex-shrink: 0;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &-filter-item {
+        width: 33.33%;
+        .input-sl-box {
+            border-bottom: none;
+        }
+
+        .list-select {
+            width: 100%;
+            padding: 1.1em 2.4rem;
+            background: rgba(248, 245, 240, 0.8);
+            box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.05);
+        }
+
+        .item-select {
+            @include hover {
+                background: rgba(164, 110, 41, 0.2);
+            }
+        }
+    }
+}

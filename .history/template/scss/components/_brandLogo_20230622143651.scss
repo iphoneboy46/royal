@@ -1,0 +1,33 @@
+.brand-logo {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+
+    &-left {
+        width: calc(100% * 5 / 12);
+    }
+
+    &-title {
+        color: $color-pri;
+        font-size: 6rem;
+        font-family: " Latin Modern Roman";
+        line-height: 1.2;
+        margin-bottom: 6.4rem;
+    }
+
+    &-note {
+        color: $color-text;
+        @include fz-32;
+        font-family: "Montserrat";
+        font-weight: 500;
+        line-height: 1.5;
+        margin-bottom: 2.4rem;
+    }
+
+    &-text {
+        color: var(--dark-elevator-3, #262626);
+        font-size: 16px;
+        font-family: "Montserrat";
+        line-height: 1.6;
+        letter-spacing: 0.16px;
+    }
+}

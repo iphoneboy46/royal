@@ -1,0 +1,13 @@
+.hotel-des {
+    padding-top: 6rem;
+    padding-bottom: 10rem;
+
+    &-text {
+        color: $color-text;
+        text-align: center;
+        @include fz-16;
+        line-height: 1.6;
+        letter-spacing: 0.16px;
+        margin-bottom: 2.4rem;
+    }
+}

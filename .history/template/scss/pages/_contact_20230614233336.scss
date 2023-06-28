@@ -1,0 +1,27 @@
+.contact-form {
+
+    
+
+    &-title {
+        font-family: "Cinzel";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 8rem;
+        line-height: 1.4;
+        text-transform: uppercase;
+        background: linear-gradient(138.37deg, #a46e29 2.24%, #f7e47f 104.59%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        margin-bottom: 1.4rem;
+    }
+
+    &-text {
+        font-weight: 400;
+        @include fz-16;
+        line-height: 1.6;
+        color: rgba($color: $color-text, $alpha: 0.8);
+        margin-bottom: 8rem;
+    }
+}

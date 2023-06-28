@@ -1,0 +1,34 @@
+.dich-vu{
+    padding-left: 9rem;
+    background: #F0E8DD;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    &-list{
+        .swiper-wrapper{
+            align-items: center;
+        }
+        .swiper-slide{
+            &:nth-child(odd){
+                width: 67.2rem;
+                height: 42rem;
+            }
+
+            &:nth-child(even){
+                height: 67.2rem;
+                width: 42rem;
+            }
+        }
+    }
+
+    &-item{
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+        &-img{
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+}

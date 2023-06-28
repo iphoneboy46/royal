@@ -1,0 +1,72 @@
+.dich-vu{
+    padding-left: 9rem;
+    background: #F0E8DD;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    &-list{
+        .swiper-wrapper{
+            align-items: center;
+            column-gap: 14rem;
+        }
+        .swiper-slide{
+            &:nth-child(odd){
+                width: 67.2rem;
+                height: 42rem;
+
+                // .dich-vu-item{
+                //     padding: 14.5rem 8.7rem;
+                // }
+            }
+
+            &:nth-child(even){
+                height: 67.2rem;
+                width: 42rem;
+
+                //  .dich-vu-item{
+                //     padding: 10rem 8.7rem;
+                // }
+            }
+        }
+    }
+
+    &-item{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+
+        &::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba($color: #EADDD0, $alpha: 0.6);
+            z-index: 2;
+        }
+
+        &-img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+
+            }
+        }
+
+        &-text{
+            position: relative;
+            z-index: 2;
+        }
+    }
+}

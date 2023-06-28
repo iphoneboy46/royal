@@ -1,0 +1,15 @@
+:root {
+  --headerHeight: 8.4rem;
+  --headerHeight2: 11.2rem;
+}
+
+@media (max-width: 1201px) {
+  :root {
+    --headerHeight: 5.6rem;
+    --headerHeight2: 5.6rem;
+  }
+}
+
+.header{
+  
+}

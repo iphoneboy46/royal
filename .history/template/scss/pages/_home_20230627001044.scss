@@ -1,0 +1,195 @@
+.home-intro {
+    width: 100%;
+    height: 100%;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 9999;
+
+    &-bg {
+        &-left {
+            position: absolute;
+            background-color: #333;
+            top: 0;
+            left: 0%;
+            width: 50%;
+            height: 100%;
+
+            animation: truotLeft 2s linear forwards;
+            @keyframes truotLeft {
+                0% {
+                    left: 0;
+                }
+
+                100% {
+                    left: -100%;
+                }
+            }
+            animation-delay: 3s;
+        }
+
+        &-center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 10;
+            opacity: 0;
+
+            animation: anHienIntro 3s linear;
+
+            @keyframes anHienIntro {
+                0% {
+                    opacity: 0;
+                }
+
+                50% {
+                    opacity: 1;
+                }
+
+                100% {
+                    opacity: 0;
+                }
+            }
+
+            &-top {
+                max-width: 10.2rem;
+                width: 100%;
+                height: 100%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+                margin-bottom: 6rem;
+            }
+
+            &-bottom {
+                width: 10.2rem;
+                height: 10.2rem;
+                transform: rotate(45deg);
+                background: linear-gradient(10deg, rgba(164, 110, 41, 1), rgba(247, 228, 127, 1));
+            }
+        }
+
+        &-right {
+            position: absolute;
+            background-color: #333;
+
+            top: 0;
+            right: 0%;
+            width: 50%;
+            height: 100%;
+
+            animation: truotRight 2s linear forwards;
+            @keyframes truotRight {
+                0% {
+                    right: 0;
+                }
+
+                100% {
+                    right: -100%;
+                }
+            }
+            animation-delay: 3s;
+        }
+    }
+
+    &-title {
+        &-box {
+            position: absolute;
+            top: 50%;
+            &:first-child {
+                right: unset;
+                left: 30%;
+                transform: translate(-50%, -50%);
+
+                animation: truotLeftText 2s ease-out forwards;
+                @keyframes truotLeftText {
+                    0% {
+                        left: 30%;
+                    }
+
+                    100% {
+                        left: -100%;
+                    }
+                }
+
+                animation-delay: 3s;
+
+                .home-intro-title-text {
+                    animation: anHienIntroLeft 5s linear;
+                    opacity: 0;
+                    @keyframes anHienIntroLeft {
+                        0% {
+                            opacity: 0;
+                        }
+
+                        40% {
+                            opacity: 1;
+                        }
+
+                        80% {
+                            opacity: 1;
+                        }
+
+                        100% {
+                            opacity: 0;
+                        }
+                    }
+                }
+            }
+
+            &:last-child {
+                left: unset;
+                right: 30%;
+                transform: translate(50%, -50%);
+
+                animation: truotRightText 2s ease-out forwards;
+                @keyframes truotRightText {
+                    0% {
+                        right: 30%;
+                    }
+
+                    100% {
+                        right: -100%;
+                    }
+                }
+                animation-delay: 3s;
+                .home-intro-title-text {
+                    animation: anHienIntroRight 5s linear;
+                    opacity: 0;
+                    @keyframes anHienIntroRight {
+                        0% {
+                            opacity: 0;
+                        }
+
+                        40% {
+                            opacity: 1;
+                        }
+
+                        80% {
+                            opacity: 1;
+                        }
+
+                        100% {
+                            opacity: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        &-text {
+            text-shadow: 0px 0.5rem 2.6rem rgba(242, 222, 121, 0.2), 0px 0.5rem 0.5rem rgba(164, 109, 41, 0.2);
+            font-size: 10.4rem;
+            font-family: "Cinzel";
+            font-weight: 700;
+            background: -webkit-linear-gradient(-120deg, rgba(164, 110, 41, 1), rgba(247, 228, 127, 1));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}

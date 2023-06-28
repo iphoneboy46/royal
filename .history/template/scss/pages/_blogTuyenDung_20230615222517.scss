@@ -1,0 +1,19 @@
+.blog-td{
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    background-color:$color-second;
+
+
+    &-top-left-content{
+        display: flex;
+        align-items: center;
+        column-gap: 2rem;
+    }
+
+    &-top-left-icon{
+        width: 10rem;
+        height: 10rem;
+        background-color:$color-pri;
+        border-radius: 50%;
+    }
+}

@@ -1,0 +1,107 @@
+.brand-logo {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    background: #F0E8DD;
+    &-left {
+        width: calc(100% * 5 / 12);
+    }
+
+    &-right{
+        flex: 1;
+    }
+
+
+    &-title {
+        color: $color-pri;
+        font-size: 6rem;
+        font-family: " Latin Modern Roman";
+        line-height: 1.2;
+        margin-bottom: 6.4rem;
+    }
+
+    &-note {
+        color: $color-text;
+        @include fz-32;
+        font-family: "Montserrat";
+        font-weight: 500;
+        line-height: 1.5;
+        margin-bottom: 2.4rem;
+    }
+
+    &-text {
+        color: $color-text;
+        @include fz-16;
+        font-family: "Montserrat";
+        line-height: 1.6;
+        letter-spacing: 0.16px;
+        margin-bottom: 6.4rem;
+    }
+
+    .swiper-pagination{
+        justify-content: start;
+    }
+
+    .swiper-pagination-bullet {
+        width: 2rem;
+        height: 2rem;
+        text-align: center;
+        line-height: 1.2;
+        color: $color-text;
+        @include fz-16;
+        font-weight: 500;
+        opacity: 1;
+        border: none;
+        background-color: transparent;
+    }
+
+    .swiper-pagination-bullet-active {
+        color: $color-pri;
+    }
+
+    &-right-box{
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        &.box-1{
+            width: 57.3rem;
+            height: 57.3rem;
+            background: rgba(164, 110, 41, 0.05);
+           
+        }
+
+
+        &.box-2{
+            width: 43.7rem;
+            height: 43.7rem;
+            background: rgba(164, 110, 41, 0.10);
+
+        }
+
+        &.box-3{
+            width: 32.3rem;
+            height: 32.3rem;
+            background: rgba(164, 110, 41, 0.15);
+
+        }
+
+
+        &.box-4{
+            width: 20rem;
+            height: 20rem;
+            background-color: $color-pri;
+
+            
+        }
+
+
+    }
+
+    &-img-box{
+        width: 15.2rem;
+        height: 15.2rem;
+        background-color: white;
+    }
+}

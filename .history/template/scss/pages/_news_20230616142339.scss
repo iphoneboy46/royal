@@ -1,0 +1,82 @@
+.news-outstanding {
+    padding-top: 8rem;
+    padding-bottom: 10rem;
+
+    &-title {
+        font-family: "Latin Modern Roman";
+        font-style: normal;
+        font-weight: 400;
+        @include fz-60;
+        line-height: 1.4;
+        color: $color-pri;
+        text-align: center;
+        margin-bottom: 4rem;
+        display: flex;
+        align-items: center;
+        column-gap: 2.6rem;
+        justify-content: center;
+    }
+
+    &-title-icon {
+        width: 4rem;
+        height: 4rem;
+        flex-shrink: 0;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        animation: phongTo linear 4s infinite backwards;
+
+        @keyframes phongTo {
+            0% {
+                transform: scale(1);
+            }
+
+            20% {
+                transform: scale(1.1);
+            }
+
+            40% {
+                transform: scale(0.8);
+            }
+
+            80% {
+                transform: scale(1.2);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+    }
+
+    &-list{
+        display: grid;
+        grid-template-areas: 
+            "h1 h1 h1 h2 h2"
+            "h1 h1 h1 h2 h2"
+            "h1 h1 h1 h3 h3"
+            "h1 h1 h1 h3 h3"
+        ;
+
+        grid-template-columns: minmax(38.4rem,1fr);
+        grid-template-rows: minmax(21.6rem,1fr);
+    }
+
+    &-item{
+        &:first-child{
+            padding-top: 22.8rem;
+        }
+    }
+
+    &-item-img{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.my-pham {
+    margin-top: 4.4rem;
+    margin-bottom: 10rem;
+
+    &-container {
+        max-width: 149.4rem;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+    }
+
+    &-left {
+        width: calc(100% * 3 / 12);
+    }
+
+    &-left-content {
+        padding-top: 8rem;
+        background: #F0E8DD;
+        &-title {
+            max-width: 20rem;
+            margin: 0 auto;
+            font-family: "Latin Modern Roman";
+            font-style: normal;
+            font-weight: 400;
+            @include fz-24;
+            line-height: 1.5;
+            color: $color-pri;
+            
+        }
+    }
+}

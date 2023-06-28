@@ -1,0 +1,16 @@
+.banner-page {
+    position: relative;
+    &-bg {
+        width: 100%;
+        height: calc(100vw * 600 / 1728);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

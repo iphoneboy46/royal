@@ -1,0 +1,349 @@
+.popup {
+  position: fixed;
+  @include full;
+  z-index: 999;
+  visibility: hidden;
+  color: $color-black-3;
+
+  .popup-content-form-wrap {
+    @media screen and (max-width: 600px) {
+      height: 45vh;
+    }
+  }
+
+  .item-form-input-box {
+    @media screen and (max-width:600px) {
+      padding-right: 0.5rem;
+    }
+  }
+
+  &.open {
+    visibility: visible;
+
+    .popup-overlay {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .popup-main {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .popup-close {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  &-overlay {
+    position: absolute;
+    background: rgba($color: #495168, $alpha: 0.9);
+
+    @include full;
+    z-index: 1;
+    @include transitionRe;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  &-main {
+    @include mid;
+    z-index: 2;
+    width: 80%;
+    max-width: 78.4rem;
+    @include transitionRe;
+    opacity: 0;
+    visibility: hidden;
+
+    @include max(1024px) {
+      width: calc(100% - 1.2rem);
+      max-width: 100%;
+    }
+  }
+
+  &-over {
+    overflow: auto;
+    min-height: 40vh;
+    max-height: 95vh;
+  }
+
+  &-wrapper {
+    background: white;
+    width: 100%;
+    min-height: 60vh;
+    position: relative;
+    padding: 6rem 5rem;
+    border-radius: 1.2rem;
+
+    @media screen and (max-width: 1024px) {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    @media screen and (max-width: 600px) {
+      padding: 6rem 2rem 3rem 2rem;
+      height: 100%;
+      min-height: 65vh;
+    }
+
+    @media screen and (max-width: 460px) {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+
+  &-title {
+    margin-bottom: 4.5rem;
+    font-weight: 600;
+    @include fz-42;
+    line-height: 1.3;
+    /* identical to box height, or 55px */
+
+    text-align: center;
+    text-transform: capitalize;
+
+    /* neutral/100 */
+
+    color: #111b36;
+
+    @media screen and (max-width: 600px) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    transition: 0.6s ease-in-out;
+    width: 3rem;
+    height: 3rem;
+    @include mid-flex;
+    z-index: 1201;
+    opacity: 0;
+    visibility: hidden;
+
+    @media screen and (max-width: 1024px) {
+      right: 10rem;
+    }
+
+    @media screen and (max-width: 600px) {
+      right: 8rem;
+    }
+
+    @media screen and (max-width: 460px) {
+      right: 2rem;
+    }
+
+    &:hover {
+      .icon {
+        transform: rotate(360deg);
+      }
+    }
+
+    .icon {
+      color: $color-black;
+      font-weight: 300;
+      font-size: 2.4rem;
+      @include transition(0.6s, ease-in-out);
+    }
+  }
+
+  &-getPriceForm {
+    // .form-control
+  }
+}
+
+.noti {
+}
+
+.recruit-popup {
+  .popup-wrapper {
+    border-radius: 1.6rem;
+    padding: 6rem 8.8rem;
+
+    @include max(1024px) {
+      padding: 3rem 4rem;
+    }
+
+    @include max(600px) {
+      padding: 2rem 2.4rem;
+      border-radius: 0.8rem;
+      overflow: hidden;
+    }
+
+    @include max(400px) {
+      padding: 2rem 1.2rem;
+    }
+  }
+
+  .popup-main {
+    width: calc(100% - 3rem);
+    max-width: 117rem;
+  }
+
+  .popup-close {
+    @include max(400px) {
+      top: 0.4rem;
+    }
+  }
+}
+
+.popup-content {
+  ::-webkit-scrollbar {
+    width: 0.2rem;
+  }
+  .btn-cus {
+    margin: 0 auto;
+  }
+}
+
+.item-form-input-box-file {
+  width: 100%;
+
+  #fileUpload {
+    display: none;
+  }
+}
+
+.item-form-input-box-file-content {
+  padding: 3rem 0;
+  width: 100%;
+  background: rgba(78, 87, 114, 0.05);
+  border: 0.1rem dashed rgba(78, 87, 114, 0.5);
+  border-radius: 12px;
+}
+
+.item-form-input-box-file-content-img {
+  width: 4rem;
+  height: 4rem;
+  margin: 0 auto 1rem;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.item-form-input-box-file-content-item {
+  font-weight: 500;
+  @include fz-16;
+  line-height: 1.5;
+  text-align: center;
+  color: #000000;
+}
+
+.popup-success {
+  max-width: 50.8rem;
+  width: 100%;
+  border-radius: 1.2rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 1000;
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  visibility: hidden;
+  pointer-events: none;
+  &.active {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: visible;
+  }
+}
+
+.popup-success-top {
+  border-top-left-radius: 1.2rem;
+  border-top-right-radius: 1.2rem;
+
+  width: 100%;
+  padding: 3rem 0;
+  background-color: #e1f1fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-success-top-img {
+  width: 12.8rem;
+  height: 12.8rem;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.popup-success-bottom {
+  padding: 4rem 5rem;
+  background-color: white;
+  border-bottom-left-radius: 1.2rem;
+  border-bottom-right-radius: 1.2rem;
+
+  .btn-cus {
+    margin: 0 auto;
+  }
+}
+
+.popup-success-bottom-title {
+  font-weight: 600;
+  @include fz-42;
+  line-height: 1.3;
+  text-align: center;
+  text-transform: capitalize;
+  color: $color-text;
+  margin-bottom: 1rem;
+}
+
+.popup-success-bottom-text {
+  font-weight: 500;
+  @include fz-16;
+  line-height: 1.5;
+  text-align: center;
+  color: $color-text;
+  margin-bottom: 3rem;
+}
+
+.popup-success-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background: rgba($color: #495168, $alpha: 0.9);
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+
+  &.active {
+    opacity: 1;
+    pointer-events: visible;
+    visibility: visible;
+  }
+}
+
+.popup-content-form {
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 2rem 0;
+
+  
+}
+
+
+.item-form-input-box {
+  position: relative;
+  width: 50%;
+}
+
+.input-form-content {
+  width: 100%;
+  border: 0.1rem solid #000000;
+  border-radius: 1.2rem;
+  min-height: 4.4rem;
+  transition: all 0.3s linear;
+  padding: 1rem;
+}

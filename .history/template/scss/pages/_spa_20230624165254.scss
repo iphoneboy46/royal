@@ -1,0 +1,16 @@
+.sh-title {
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+    &-container {
+        max-width: 161rem;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+    }
+
+    &-title {
+        color: $color-pri;
+        font-size: 8rem;
+        font-family:" Latin Modern Roman";
+        line-height: 1.5rem;
+    }
+}

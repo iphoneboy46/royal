@@ -1,0 +1,9 @@
+.brand-logo{
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+
+
+    &-left{
+        width: calc(100% * 5 / 12);
+    }
+}

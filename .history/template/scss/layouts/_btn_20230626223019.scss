@@ -1,0 +1,112 @@
+.btn {
+  &.brown {
+    background: $color-pri;
+
+    &::after {
+      background: $color-pri;
+    }
+  }
+
+  border-radius: 4.7rem;
+  background: linear-gradient(138.37deg, #a46e29 2.24%, #f7e47f 104.59%);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding-right: 1.4rem;
+  position: relative;
+  z-index: 1;
+  width: fit-content;
+  cursor: pointer;
+  @include hover {
+    .btn-icon-right {
+      transform: rotate(-45deg);
+
+      img {
+        filter: brightness(0) saturate(100%) invert(99%) sepia(100%) saturate(0%) hue-rotate(274deg) brightness(103%)
+          contrast(101%);
+      }
+    }
+
+    &::after {
+      width: 100%;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 1.9rem;
+    right: -49%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 3.6rem;
+    border-radius: 4.7rem;
+    z-index: -1;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+
+    @media screen and (max-width: 460px) {
+      top: 1.7rem;
+      height: 3rem;
+      right: -48%;
+    }
+  }
+
+  &::after {
+    content: "";
+    border-radius: 4.7rem;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 80%;
+    background: linear-gradient(138.37deg, #a46e29 2.24%, #f7e47f 104.59%);
+    transition: all 0.3s ease-in-out;
+
+    @media screen and (max-width:660px){
+      width: 78%;
+    }
+  }
+
+  &-inner {
+    padding: 1.1rem 2.1rem;
+    font-weight: 400;
+    font-size: 14px;
+    @include fz-14;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.02em;
+    position: relative;
+    z-index: 9;
+    color: #ffffff;
+    transition: all 0.3s ease-in-out;
+
+    @media screen and (max-width: 460px) {
+      padding: 1rem 1.6rem;
+
+      @include fz-12;
+    }
+  }
+
+  &-icon-right {
+    width: 1.4rem;
+    height: 1.4rem;
+    flex-shrink: 0;
+    margin-left: 1rem;
+    display: block;
+    transition: all 0.3s ease-in-out;
+
+    @media screen and (max-width: 460px) {
+      width: 1.3rem;
+      height: 1.3rem;
+      
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      transition-delay: 0.1s;
+    }
+  }
+}

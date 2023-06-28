@@ -1,0 +1,14 @@
+.brand-logo {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+
+    &-left {
+        width: calc(100% * 5 / 12);
+    }
+
+    &-title {
+        color:$color-pri;
+        font-size: 6rem;
+        font-family:" Latin Modern Roman";
+    }
+}

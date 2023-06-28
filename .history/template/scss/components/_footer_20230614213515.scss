@@ -1,0 +1,15 @@
+.footer{
+  background-color: $color-pri;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+
+  &-logo{
+    width: 14.8rem;
+    height: 10.4rem;
+display: block;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

@@ -1,0 +1,360 @@
+@font-face {
+    font-family: 'LMRoman5';
+    src: url('LMRoman5-Regular.eot');
+    src: url('LMRoman5-Regular.eot?#iefix') format('embedded-opentype'),
+        url('LMRoman5-Regular.woff2') format('woff2'),
+        url('LMRoman5-Regular.woff') format('woff'),
+        url('LMRoman5-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'LMRoman6';
+    src: url('LMRoman6-Bold.eot');
+    src: url('LMRoman6-Bold.eot?#iefix') format('embedded-opentype'),
+        url('LMRoman6-Bold.woff2') format('woff2'),
+        url('LMRoman6-Bold.woff') format('woff'),
+        url('LMRoman6-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'LMRoman5';
+    src: url('LMRoman5-Bold.eot');
+    src: url('LMRoman5-Bold.eot?#iefix') format('embedded-opentype'),
+        url('LMRoman5-Bold.woff2') format('woff2'),
+        url('LMRoman5-Bold.woff') format('woff'),
+        url('LMRoman5-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'LMRoman7';
+    src: url('LMRoman7-Regular.eot');
+    src: url('LMRoman7-Regular.eot?#iefix') format('embedded-opentype'),
+        url('LMRoman7-Regular.woff2') format('woff2'),
+        url('LMRoman7-Regular.woff') format('woff'),
+        url('LMRoman7-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'LMRoman7';
+    src: url('LMRoman7-Italic.eot');
+    src: url('LMRoman7-Italic.eot?#iefix') format('embedded-opentype'),
+        url('LMRoman7-Italic.woff2') format('woff2'),
+        url('LMRoman7-Italic.woff') format('woff'),
+        url('LMRoman7-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'LMRoman7';
+    src: url('LMRoman7-Bold.eot');
+    src: url('LMRoman7-Bold.eot?#iefix') format('embedded-opentype'),
+        url('LMRoman7-Bold.woff2') format('woff2'),
+        url('LMRoman7-Bold.woff') format('woff'),
+        url('LMRoman7-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'LMRoman6';
+    src: url('LMRoman6-Regular.eot');
+    src: url('LMRoman6-Regular.eot?#iefix') format('embedded-opentype'),
+        url('LMRoman6-Regular.woff2') format('woff2'),
+        url('LMRoman6-Regular.woff') format('woff'),
+        url('LMRoman6-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'LMRoman8';
+    src: url('LMRoman8-Regular.eot');
+    src: url('LMRoman8-Regular.eot?#iefix') format('embedded-opentype'),
+        url('LMRoman8-Regular.woff2') format('woff2'),
+        url('LMRoman8-Regular.woff') format('woff'),
+        url('LMRoman8-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'LMRoman8';
+    src: url('LMRoman8-Bold.eot');
+    src: url('LMRoman8-Bold.eot?#iefix') format('embedded-opentype'),
+        url('LMRoman8-Bold.woff2') format('woff2'),
+        url('LMRoman8-Bold.woff') format('woff'),
+        url('LMRoman8-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'LMRoman8';
+    src: url('LMRoman8-Italic.eot');
+    src: url('LMRoman8-Italic.eot?#iefix') format('embedded-opentype'),
+        url('LMRoman8-Italic.woff2') format('woff2'),
+        url('LMRoman8-Italic.woff') format('woff'),
+        url('LMRoman8-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'LMRoman9';
+    src: url('LMRoman9-Bold.eot');
+    src: url('LMRoman9-Bold.eot?#iefix') format('embedded-opentype'),
+        url('LMRoman9-Bold.woff2') format('woff2'),
+        url('LMRoman9-Bold.woff') format('woff'),
+        url('LMRoman9-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'LMRoman10';
+    src: url('LMRoman10-BoldItalic.eot');
+    src: url('LMRoman10-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('LMRoman10-BoldItalic.woff2') format('woff2'),
+        url('LMRoman10-BoldItalic.woff') format('woff'),
+        url('LMRoman10-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'LMRoman10';
+    src: url('LMRoman10-Bold.eot');
+    src: url('LMRoman10-Bold.eot?#iefix') format('embedded-opentype'),
+        url('LMRoman10-Bold.woff2') format('woff2'),
+        url('LMRoman10-Bold.woff') format('woff'),
+        url('LMRoman10-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'LMRoman9';
+    src: url('LMRoman9-Italic.eot');
+    src: url('LMRoman9-Italic.eot?#iefix') format('embedded-opentype'),
+        url('LMRoman9-Italic.woff2') format('woff2'),
+        url('LMRoman9-Italic.woff') format('woff'),
+        url('LMRoman9-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'LMRoman9';
+    src: url('LMRoman9-Regular.eot');
+    src: url('LMRoman9-Regular.eot?#iefix') format('embedded-opentype'),
+        url('LMRoman9-Regular.woff2') format('woff2'),
+        url('LMRoman9-Regular.woff') format('woff'),
+        url('LMRoman9-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'LMRoman12';
+    src: url('LMRoman12-Bold.eot');
+    src: url('LMRoman12-Bold.eot?#iefix') format('embedded-opentype'),
+        url('LMRoman12-Bold.woff2') format('woff2'),
+        url('LMRoman12-Bold.woff') format('woff'),
+        url('LMRoman12-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'LMRoman10';
+    src: url('LMRoman10-Italic.eot');
+    src: url('LMRoman10-Italic.eot?#iefix') format('embedded-opentype'),
+        url('LMRoman10-Italic.woff2') format('woff2'),
+        url('LMRoman10-Italic.woff') format('woff'),
+        url('LMRoman10-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'LMRoman10';
+    src: url('LMRoman10-Regular.eot');
+    src: url('LMRoman10-Regular.eot?#iefix') format('embedded-opentype'),
+        url('LMRoman10-Regular.woff2') format('woff2'),
+        url('LMRoman10-Regular.woff') format('woff'),
+        url('LMRoman10-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'LMRoman12';
+    src: url('LMRoman12-Italic.eot');
+    src: url('LMRoman12-Italic.eot?#iefix') format('embedded-opentype'),
+        url('LMRoman12-Italic.woff2') format('woff2'),
+        url('LMRoman12-Italic.woff') format('woff'),
+        url('LMRoman12-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'LMRoman12';
+    src: url('LMRoman12-Regular.eot');
+    src: url('LMRoman12-Regular.eot?#iefix') format('embedded-opentype'),
+        url('LMRoman12-Regular.woff2') format('woff2'),
+        url('LMRoman12-Regular.woff') format('woff'),
+        url('LMRoman12-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'LMRoman17';
+    src: url('LMRoman17-Regular.eot');
+    src: url('LMRoman17-Regular.eot?#iefix') format('embedded-opentype'),
+        url('LMRoman17-Regular.woff2') format('woff2'),
+        url('LMRoman17-Regular.woff') format('woff'),
+        url('LMRoman17-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'LMRomanCaps10';
+    src: url('LMRomanCaps10-Oblique.eot');
+    src: url('LMRomanCaps10-Oblique.eot?#iefix') format('embedded-opentype'),
+        url('LMRomanCaps10-Oblique.woff2') format('woff2'),
+        url('LMRomanCaps10-Oblique.woff') format('woff'),
+        url('LMRomanCaps10-Oblique.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'LMRomanDemi10';
+    src: url('LMRomanDemi10-Regular.eot');
+    src: url('LMRomanDemi10-Regular.eot?#iefix') format('embedded-opentype'),
+        url('LMRomanDemi10-Regular.woff2') format('woff2'),
+        url('LMRomanDemi10-Regular.woff') format('woff'),
+        url('LMRomanDemi10-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'LMRomanCaps10';
+    src: url('LMRomanCaps10-Regular.eot');
+    src: url('LMRomanCaps10-Regular.eot?#iefix') format('embedded-opentype'),
+        url('LMRomanCaps10-Regular.woff2') format('woff2'),
+        url('LMRomanCaps10-Regular.woff') format('woff'),
+        url('LMRomanCaps10-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'LMRomanDunh10';
+    src: url('LMRomanDunh10-Oblique.eot');
+    src: url('LMRomanDunh10-Oblique.eot?#iefix') format('embedded-opentype'),
+        url('LMRomanDunh10-Oblique.woff2') format('woff2'),
+        url('LMRomanDunh10-Oblique.woff') format('woff'),
+        url('LMRomanDunh10-Oblique.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'LMRomanDemi10';
+    src: url('LMRomanDemi10-Oblique.eot');
+    src: url('LMRomanDemi10-Oblique.eot?#iefix') format('embedded-opentype'),
+        url('LMRomanDemi10-Oblique.woff2') format('woff2'),
+        url('LMRomanDemi10-Oblique.woff') format('woff'),
+        url('LMRomanDemi10-Oblique.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'LMRomanSlant9';
+    src: url('LMRomanSlant9-Regular.eot');
+    src: url('LMRomanSlant9-Regular.eot?#iefix') format('embedded-opentype'),
+        url('LMRomanSlant9-Regular.woff2') format('woff2'),
+        url('LMRomanSlant9-Regular.woff') format('woff'),
+        url('LMRomanSlant9-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'LMRomanDunh10';
+    src: url('LMRomanDunh10-Regular.eot');
+    src: url('LMRomanDunh10-Regular.eot?#iefix') format('embedded-opentype'),
+        url('LMRomanDunh10-Regular.woff2') format('woff2'),
+        url('LMRomanDunh10-Regular.woff') format('woff'),
+        url('LMRomanDunh10-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'LMRomanSlant8';
+    src: url('LMRomanSlant8-Regular.eot');
+    src: url('LMRomanSlant8-Regular.eot?#iefix') format('embedded-opentype'),
+        url('LMRomanSlant8-Regular.woff2') format('woff2'),
+        url('LMRomanSlant8-Regular.woff') format('woff'),
+        url('LMRomanSlant8-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'LMRomanSlant10';
+    src: url('LMRomanSlant10-Bold.eot');
+    src: url('LMRomanSlant10-Bold.eot?#iefix') format('embedded-opentype'),
+        url('LMRomanSlant10-Bold.woff2') format('woff2'),
+        url('LMRomanSlant10-Bold.woff') format('woff'),
+        url('LMRomanSlant10-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+

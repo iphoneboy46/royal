@@ -1,0 +1,33 @@
+:root {
+  --headerHeight: 8.4rem;
+  --headerHeight2: 11.2rem;
+}
+
+@media (max-width: 1201px) {
+  :root {
+    --headerHeight: 5.6rem;
+    --headerHeight2: 5.6rem;
+  }
+}
+
+.header {
+  padding-top: 4.2rem;
+  padding-bottom: 4.2rem;
+
+  &-content {
+    justify-content: space-between;
+    align-items: center;
+
+    &-btn-img{
+      width: 4rem;
+      height: 4rem;
+      overflow: hidden;
+      cursor: pointer;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit:cover ;
+      }
+    }
+  }
+}
