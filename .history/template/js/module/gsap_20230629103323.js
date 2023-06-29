@@ -111,6 +111,128 @@ export default function GSAP() {
     }
   }
 
+  /// gsap horizontal
+  // const dichVuList = document.querySelector(".dich-vu-list");
+  // if (dichVuList) {
+  //   gsap.registerPlugin(ScrollTrigger);
+
+  //   //Horizontal Scroll Galleries
+
+  //   const horizontalSections = gsap.utils.toArray(".dich-vu-list");
+
+  //   horizontalSections.forEach(function (sec, i) {
+  //     const pinWrap = sec.querySelector(".dich-vu-list-content");
+
+  //     let pinWrapWidth;
+  //     let horizontalScrollLength;
+
+  //     function refresh() {
+  //       pinWrapWidth = pinWrap.scrollWidth;
+  //       horizontalScrollLength = pinWrapWidth - window.innerWidth;
+  //     }
+
+  //     // window.addEventListener("load", function () {
+  //     refresh();
+  //     // Pinning and horizontal scrolling
+  //     gsap.to(pinWrap, {
+  //       scrollTrigger: {
+  //         scrub: 1,
+  //         trigger: sec,
+  //         pin: sec,
+  //         start: "center center",
+  //         end: () => `+=${pinWrapWidth}`,
+  //         invalidateOnRefresh: true,
+  //         duration: 1,
+  //       },
+  //       x: () => -horizontalScrollLength,
+  //       ease: "none",
+  //     });
+
+  //     ScrollTrigger.addEventListener("refreshInit", refresh);
+  //     // });
+  //   });
+  // }
+
+  const homeBanner = document.querySelector(".banner-home");
+  if (homeBanner) {
+    gsap.registerPlugin(ScrollTrigger);
+
+    let widthWindow = window.screen.width;
+    let heightWindow = window.screen.height;
+    let tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: homeBanner,
+        // toggleActions: "restart pause resume reverse", // play, pause , resume , reverse , restart , reset
+        start: "top", // "top , center , end , pixels , % , relative to top"
+        end: "+=1",
+        scrub: 6, // thao tac scroll chuot: true , false , number
+      },
+    });
+
+    tl.from(homeBanner, {
+      scale: 1,
+      x: 0,
+      ease: Power0.easeOut,
+      duration: 10,
+    });
+
+    tl.to(homeBanner, {
+      width: "50%",
+      height: "25rem",
+      ease: Power0.easeOut,
+      x: widthWindow / 2,
+      y: heightWindow / 4,
+      duration: 10,
+    });
+
+    tl.to(homeBanner, {
+      width: "64.4rem",
+      height: "20rem",
+      ease: Power1.easeOut,
+      x: widthWindow / 1.8,
+      y: heightWindow / 3,
+      duration: 10,
+    });
+
+    const bannerHomeImages = homeBanner.querySelectorAll(".banner-home-img");
+    bannerHomeImages.forEach((bannerHomeImage) => {
+      gsap.to(bannerHomeImage, {
+        scrollTrigger: {
+          trigger: bannerHomeImage,
+          start: "top top",
+          end: "bottom center",
+          scrub: false,
+          pin: false,
+          pinSpacing: false,
+          markers: true,
+        },
+
+        duration: 1,
+        ease: "none",
+        scale: 1.5,
+        transform: "none",
+      });
+    });
+
+    const bannerHomeTitles = homeBanner.querySelectorAll(".banner-home-title");
+    bannerHomeTitles.forEach((bannerHomeTitle) => {
+      gsap.registerPlugin(ScrollTrigger);
+      gsap.to(bannerHomeTitle, {
+        scrollTrigger: {
+          trigger: bannerHomeTitle,
+          // toggleActions: "restart pause resume reverse", // play, pause , resume , reverse , restart , reset
+          start: "top 40%", // "top , center , end , pixels , % , relative to top"
+          end: "+=250",
+          scrub: 4, // thao tac scroll chuot: true , false , number
+        },
+        opacity: 0,
+        duration: 5,
+      });
+    });
+
+    
+  }
+
   const homeBanner = document.querySelector(".banner-home");
   if (homeBanner) {
     gsap.registerPlugin(ScrollTrigger);
@@ -211,7 +333,8 @@ export default function GSAP() {
         height: "100%",
         duration: 10,
       });
+
+     
     }
   }
 }
-
