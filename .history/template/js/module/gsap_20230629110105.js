@@ -214,5 +214,49 @@ export default function GSAP() {
     }
   }
 
+// gsap horizontal
+const dichVuList = document.querySelector(".dich-vu-list");
+if (dichVuList) {
+  gsap.registerPlugin(ScrollTrigger);
+
+  //Horizontal Scroll Galleries
+
+  const horizontalSections = gsap.utils.toArray(".dich-vu-list");
+
+  horizontalSections.forEach(function (sec, i) {
+    const pinWrap = sec.querySelector(".dich-vu-list-content");
+
+    let pinWrapWidth;
+    let horizontalScrollLength;
+
+    function refresh() {
+      pinWrapWidth = pinWrap.scrollWidth;
+      horizontalScrollLength = pinWrapWidth - window.innerWidth;
+    }
+
+    // window.addEventListener("load", function () {
+    refresh();
+    // Pinning and horizontal scrolling
+    gsap.to(pinWrap, {
+      scrollTrigger: {
+        scrub: 1,
+        trigger: sec,
+        pin: sec,
+        start: "center center",
+        end: () => `+=${pinWrapWidth}`,
+        invalidateOnRefresh: true,
+        duration: 1,
+      },
+      x: () => -horizontalScrollLength,
+      ease: "none",
+    });
+
+    ScrollTrigger.addEventListener("refreshInit", refresh);
+    // });
+  });
+}
 
 }
+
+
+

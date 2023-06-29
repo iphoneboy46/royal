@@ -5496,6 +5496,11 @@ body:has(.seclect2-seach-show) .select2-container .select2-dropdown .select2-res
 .brand-logo-content {
   align-items: center;
 }
+@media screen and (max-width: 1200px) {
+  .brand-logo-content {
+    flex-direction: column;
+  }
+}
 .brand-logo-left {
   width: 50%;
 }
@@ -15491,7 +15496,11 @@ button[aria-label="Toggle autoplay"] {
 }
 .my-pham-right-content-box {
   padding-left: 6.8rem;
-  padding-left: 0;
+}
+@media screen and (max-width: 1200px) {
+  .my-pham-right-content-box {
+    padding-left: 0;
+  }
 }
 .my-pham-right-content .title-main {
   margin-bottom: 3.6rem;
@@ -15706,11 +15715,6 @@ button[aria-label="Toggle autoplay"] {
   margin-bottom: 18.8rem;
   overflow: hidden;
 }
-.dich-vu-list-content {
-  display: flex;
-  align-items: center;
-  column-gap: 14rem;
-}
 .dich-vu-list .swiper-wrapper {
   align-items: center;
   column-gap: 14rem;
@@ -15748,26 +15752,6 @@ button[aria-label="Toggle autoplay"] {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.dich-vu-item:nth-child(odd) {
-  width: 67.2rem;
-  height: 42rem;
-  padding: 0rem 8.7rem;
-}
-.dich-vu-item:nth-child(odd) .dich-vu-item-title {
-  bottom: -25%;
-  left: 30%;
-  transform: translate(-50%, -50%);
-}
-.dich-vu-item:nth-child(even) {
-  height: 67.2rem;
-  width: 42rem;
-  padding: 0rem 4rem;
-}
-.dich-vu-item:nth-child(even) .dich-vu-item-title {
-  top: 50%;
-  left: -2%;
-  transform: translate(-50%, -50%) rotate(-90deg);
 }
 @media (min-width: 1201px) {
   .dich-vu-item:hover::before {
