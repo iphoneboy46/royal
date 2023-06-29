@@ -296,6 +296,7 @@ export default function SwiperModule() {
       var swiperApmRight = new Swiper(
         dichVuApm.querySelector(".mySwiperApmRight"),
         {
+         
           direction: "horizontal",
           slidesPerView: "2",
           speed: 1200,
@@ -308,18 +309,19 @@ export default function SwiperModule() {
           },
 
           breakpoints: {
+
             600: {
               direction: "vertical",
               slidesPerView: "3",
-              spaceBetween: 36,
-              centeredSlides: true,
+          spaceBetween: 36,
+          centeredSlides: true,
             },
 
             1024: {
               direction: "vertical",
               slidesPerView: "3",
-              spaceBetween: 36,
-              centeredSlides: true,
+          spaceBetween: 36,
+          centeredSlides: true,
             },
           },
         }
@@ -331,6 +333,7 @@ export default function SwiperModule() {
           speed: 1200,
           loop: true,
           slidesPerView: "auto",
+          speechSynthesis,
         }
       );
 

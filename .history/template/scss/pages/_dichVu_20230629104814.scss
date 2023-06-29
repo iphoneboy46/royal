@@ -8,11 +8,11 @@
         margin-bottom: 18.8rem;
         overflow: hidden;
 
-        &-content{
-            display: flex;
-            align-items: center;
-            column-gap: 14rem;
-        }
+        // &-content{
+        //     display: flex;
+        //     align-items: center;
+        //     column-gap: 14rem;
+            
 
         .swiper-wrapper {
             align-items: center;
@@ -58,39 +58,39 @@
     &-item {
         flex-shrink: 0;
        
-        &:nth-child(odd) {
-            width: 67.2rem;
-            height: 42rem;
+        // &:nth-child(odd) {
+        //     width: 67.2rem;
+        //     height: 42rem;
 
-            .dich-vu-item {
+        //     .dich-vu-item {
                
-            }
+        //     }
 
-            padding: 0rem 8.7rem;
+        //     padding: 0rem 8.7rem;
 
-            .dich-vu-item-title {
-                bottom: -25%;
-                left: 30%;
-                transform: translate(-50%, -50%);
-            }
-        }
+        //     .dich-vu-item-title {
+        //         bottom: -25%;
+        //         left: 30%;
+        //         transform: translate(-50%, -50%);
+        //     }
+        // }
 
-        &:nth-child(even) {
-            height: 67.2rem;
-            width: 42rem;
+        // &:nth-child(even) {
+        //     height: 67.2rem;
+        //     width: 42rem;
 
-            .dich-vu-item {
+        //     .dich-vu-item {
                
-            }
+        //     }
 
-            padding: 0rem 4rem;
+        //     padding: 0rem 4rem;
 
-            .dich-vu-item-title {
-                top: 50%;
-                left: -2%;
-                transform: translate(-50%, -50%) rotate(-90deg);
-            }
-        }
+        //     .dich-vu-item-title {
+        //         top: 50%;
+        //         left: -2%;
+        //         transform: translate(-50%, -50%) rotate(-90deg);
+        //     }
+        // }
         
         position: relative;
         width: 100%;
@@ -171,10 +171,6 @@
 
         @media screen and (max-width:1200px) {
             padding: 6rem 2rem;
-        }
-
-        @media screen and (max-width:600px) {
-            padding: 3rem 2rem;
         }
 
         &-content{
